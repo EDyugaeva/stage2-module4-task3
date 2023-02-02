@@ -17,6 +17,8 @@ public class RectangleObserver implements Observer {
         RectangleValues rectangleValues = RectangleWarehouse.getInstance().get(rectangle.getId());
         rectangleValues.setPerimeter(sideA + sideB);
         rectangleValues.setSquare(sideA*sideB);
+        RectangleWarehouse.getInstance().put(rectangle.getId(), rectangleValues);
+
 
     }
     // Write your code here!
