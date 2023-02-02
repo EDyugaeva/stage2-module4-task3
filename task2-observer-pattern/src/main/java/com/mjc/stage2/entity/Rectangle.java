@@ -28,7 +28,6 @@ public class Rectangle implements Observable {
 
     public void setId(int id) {
         this.id = id;
-        notifyObserver();
     }
 
     public double getSideA() {
